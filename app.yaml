@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: dicodingdicoding/index.html
+  upload: dicodingdicoding/index.html
+
+- url: /(.*)
+  static_files: dicodingdicoding/\1
+  upload: dicodingdicoding/(.*)
